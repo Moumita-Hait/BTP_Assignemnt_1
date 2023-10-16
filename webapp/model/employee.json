@@ -1,0 +1,52 @@
+{
+    "EmployeeCollection":[
+    {
+        "EmployeeId": 1,
+        "EmployeeName": "John Ronalds",
+        "EmployeeGrade": "O",
+        "EmployeeDesignation" : "Manager"
+    },
+    {
+        "EmployeeId": 2,
+        "EmployeeName": "Mark Potter",
+        "EmployeeGrade": "A",
+        "EmployeeDesignation" : "Developer"
+    },
+    {
+        "EmployeeId": 3,
+        "EmployeeName": "Mary Rudd",
+        "EmployeeGrade": "B",
+        "EmployeeDesignation" : "Analyst"
+    },
+    {
+        "EmployeeId": 4,
+        "EmployeeName": "Alice Evans",
+        "EmployeeGrade": "C",
+        "EmployeeDesignation" : "Director"
+    },
+    {
+        "EmployeeId": 5,
+        "EmployeeName": "Rosy Watson",
+        "EmployeeGrade": "D",
+        "EmployeeDesignation" : "Designer"
+    },
+    {
+        "EmployeeId": 6,
+        "EmployeeName": "Harry Holmes",
+        "EmployeeGrade": "SC",
+        "EmployeeDesignation" : "HR"
+    },
+    {
+        "EmployeeId": 7,
+        "EmployeeName": "Emma Jane",
+        "EmployeeGrade": "A",
+        "EmployeeDesignation" : "Tester"
+    },
+    {
+        "EmployeeId": 8,
+        "EmployeeName": "Tony Stark",
+        "EmployeeGrade": "E",
+        "EmployeeDesignation" : "Businerr Development Officer"
+    }
+    ]
+}

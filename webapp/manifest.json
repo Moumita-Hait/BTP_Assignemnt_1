@@ -1,0 +1,129 @@
+{
+  "_version": "1.49.0",
+  "sap.app": {
+    "id": "myassigmnent.myassigmnent",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.11.1",
+      "toolsId": "6fcd09c0-e6dc-425e-869b-c3931f0ba2de"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.119.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "myassigmnent.myassigmnent.i18n.i18n"
+        }
+      },
+      "":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/employee.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "myassigmnent.myassigmnent.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "Routemyassignment",
+          "pattern": ":?query:",
+          "target": [
+            "Targetmyassignment"
+          ]
+        },
+        {
+          "name": "myAssiPageTwo",
+          "pattern": "myAssiPageTwo/{employeeInfo}",
+          "target": "myAssiPageTwo"
+        },
+        {
+          "name": "myAssiPageThree",
+          "pattern": "myAssiPageThree/{employeeInfo}",
+          "target": "myAssiPageThree"
+        }
+      ],
+      "targets": {
+        "Targetmyassignment": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "myassignment",
+          "viewName": "myassignment"
+        },
+        "myAssiPageTwo": {
+          "viewId": "myAssiPageTwo",
+          "viewName": "myAssiPageTwo",
+          "viewLevel": 2
+        },
+        "myAssiPageThree": {
+          "viewId": "myAssiPageThree",
+          "viewName": "myAssiPageThree",
+          "viewLevel": 3
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "myassigmnent.myassigmnent.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

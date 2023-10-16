@@ -1,0 +1,33 @@
+<mvc:View controllerName="myassigmnent.myassigmnent.controller.myassignment"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <Table id="idEmployeeDetails"
+		items="{
+			path: '/EmployeeCollection'
+		}">
+		<columns>
+			<Column
+				width="16em">
+				<Text text="Employee Name" />
+			</Column>
+			<Column
+				width="16em"
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="Employee Grade" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle" press="onItemPress" type="Navigation">
+				<cells>
+				<ObjectIdentifier
+						title="{EmployeeName}"/>
+					<Text
+						text="{EmployeeGrade}" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+    </Page>
+</mvc:View>

@@ -1,0 +1,17 @@
+<mvc:View controllerName="myassigmnent.myassigmnent.controller.myAssiPageTwo"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+	<VBox >
+	<Text text="This is page two" />
+		<Label text="Employee ID:" />
+       <StandardListItem title="{employeeModel>/EmployeeId}" /> 
+	   <Label text="Employee Name:" />
+	   <StandardListItem title="{employeeModel>/EmployeeName}" />
+	   <Label text="Employee Grade:" />
+	   <StandardListItem title="{employeeModel>/EmployeeGrade}" />
+	   <Label text="Employee Designation:" />
+	   <StandardListItem title="{employeeModel>/EmployeeDesignation}" />
+	   </VBox>
+    </Page>
+</mvc:View>
